@@ -1,0 +1,6 @@
+{
+    "editor.maxTokenizationLineLength": 50,
+    "html.format.wrapLineLength": 50,
+    "html.format.endWithNewline": true,
+    "editor.autoIndent": "keep"
+}

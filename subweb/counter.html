@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="../styles/counter.cs">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .counters {
+            width: 100%;
+            min-height: 550px;
+            position: relative;
+            background: url(../img2/img1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content;
+            padding: 0.5rem;*/
+        }
+
+        .overlay2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: white;
+            opacity: 1;
+        }
+
+        .count-container {
+            width: 100%;
+            height: 100%;
+            /*background: rgb(236, 169, 169);*/
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: min-content;
+            grid-auto-rows: min-content;
+            align-content: center;
+            justify-items: center;
+            grid-gap: 0.2rem;
+            /* color: white;*/
+            color: #21509b;
+            font-size: 2rem;
+            position: absolute;
+            padding: 8rem;
+            /*padding-left: 4rem;
+            padding-right: 4rem;*/
+            box-sizing: border-box;
+        }
+
+        .ddd1,
+        .ddd2,
+        .ddd3,
+        .ddd4 {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid red;
+            /* #f8f9fa;*/
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media(max-width:800px) {
+            .count-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: min-content;
+                grid-auto-rows: min-content;
+                justify-items: stretch;
+                grid-row-gap: 0.5rem;
+            }
+
+            .ddd1,
+            .ddd2,
+            .ddd3,
+            .ddd4 {
+                text-align: center;
+                border: 0.1rem solid #f8f9fa;
+                padding: 0rem;
+            }
+
+            .counter {}
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="counters">
+        <div class="overlay2"></div>
+        <div class="count-container">
+            <div class="ddd1">
+                <div class="counter"
+                    data-target="60000 ">0</div>
+                <h5><i
+                        class="fab fa-twitter fa-4x "></i>
+                </h5>
+            </div>
+            <div class="ddd2">
+                <div class="counter"
+                    data-target="15000 ">0</div>
+                <h5> <i
+                        class="fab fa-twitter fa-4x "></i>
+                </h5>
+            </div>
+            <div class="ddd3">
+                <div class="counter"
+                    data-target="9000 ">0</div>
+                <h5> <i
+                        class="fab fa-facebook fa-4x "></i>
+                </h5>
+            </div>
+            <div class="ddd4">
+                <div class="counter"
+                    data-target="5000 ">0</div>
+                <h5><i
+                        class="fab fa-linkedin fa-4x "></i>
+                </h5>
+            </div>
+        </div>
+    </section>
+    <script src="../java/java2.js"></script>
+    <script
+        src="https://kit.fontawesome.com/c9c47b63d8.js "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>

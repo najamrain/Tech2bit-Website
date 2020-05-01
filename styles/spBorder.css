@@ -1,0 +1,17 @@
+.border {
+            width: 300px;
+            height: px;
+            background: white;
+            border: 0.2rem solid white;
+            border-radius: 0.5rem;
+            display: inline-block;
+        }
+
+        .border1 {
+            width: 15px;
+            height: px;
+            background:#f0e10e; ;
+            border: 0.2rem solid #f0e10e;
+            border-radius: 0.5rem;
+            display: inline-block;
+        }

@@ -1,0 +1,102 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .counters {
+            width: 100%;
+            min-height: 550px;
+            position: relative;
+            background: url(../img2/img1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content;
+            padding: 0.5rem;*/
+        }
+
+        .overlay2 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background:#21509b;
+            opacity: 0.8;
+        }
+
+        .count-container {
+            width: 100%;
+            height: 100%;
+            /*background: rgb(236, 169, 169);*/
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: min-content;
+            grid-auto-rows: min-content;
+            align-content: center;
+            justify-items: center;
+            grid-gap: 0.2rem;
+            color: white;
+          /*  color: #21509b;*/
+            font-size: 2rem;
+            position: absolute;
+            padding: 8rem;
+            /*padding-left: 4rem;
+            padding-right: 4rem;*/
+            box-sizing: border-box;
+           /* background: rgb(93, 46, 204);*/
+        }
+
+        .ddd1,
+        .ddd2,
+        .ddd3,
+        .ddd4 {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid white;
+            /* #f8f9fa;*/
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: whte;
+        }
+        .ddd1,
+        .ddd2,
+        .ddd3,
+        .ddd4 h5{
+        color: white;
+        font-size: 1.4rem;
+        }
+
+        @media(max-width:800px) {
+            .count-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: min-content;
+                grid-auto-rows: min-content;
+                justify-items: stretch;
+                grid-row-gap: 0.5rem;
+            }
+
+            .ddd1,
+            .ddd2,
+            .ddd3,
+            .ddd4 {
+                text-align: center;
+                border: 0.1rem solid #f8f9fa;
+                padding: 0rem;
+            }
+
+            .counter {}
+        }

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+    <link rel="icon" type="image/x-icon"
+        href="favicon.ico">
+    <title>Home Page</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2|Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="../styles/main.css">
+    <link rel="stylesheet"
+        href="../styles/mylogo.css">
+    <link rel="stylesheet"
+        href="../styles/counter.css">
+    <link rel="stylesheet"
+        href="../styles/spBorder.css">
+    <!--link rel="stylesheet" href="styles/services.css"-->
+    <!--link rel="stylesheet" href="styles/regulatory.css"-->
+    <style>
+        section {
+            background-color: white;
+        }
+
+        .hhdr {
+            min-width: 100vw;
+            min-height: 100vh;
+            position: relative;
+            font-family: 'Noto Serif', serif;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .iimg-wrapper {
+            min-width: 100vw;
+            min-height: 100vh;
+            background: url("https://i.ibb.co/tLFQS8w/group.png");
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .ttext-container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-rows: min-content min-content;
+            grid-auto-rows: min-content;
+            grid-gap: 0.2rem;
+            justify-content: center;
+            align-content: center;
+            position: absolute;
+            top: 0;
+            padding: 0 8rem;
+            z-index: 1;
+        }
+
+        .ttext1 {
+            /*background: blueviolet;*/
+        }
+
+        .ttext2 {}
+
+        .ttext1 .ancher-baba {
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+            font-size: 1.4rem;
+            border: 2px solid white;
+            padding: 0.5rem 2.8rem;
+            border-radius: 0.3rem;
+            background-color: black;
+            margin-top: 0.6rem;
+            position: relative;
+            transition: all 0.5s ease;
+        }
+
+        .ancher-baba:after {
+            background: red;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            z-index: -1;
+            transition: all 0.5s ease;
+        }
+
+        .ttext1 .ancher-baba:hover {
+            background-color: white;
+            /* color: rgb(31, 6, 121);*/
+            color: white;
+            box-sizing: border-box;
+            border: 2px solid white;
+        }
+
+        .ancher-baba:hover:after {
+            width: 100%;
+        }
+
+        span {}
+
+        .oover-lay {
+            min-width: 100vw;
+            min-height: 100vh;
+            background: rgb(31, 6, 77);
+            /* background: #5b6a82;*/
+            /* background: #2f4b78;*/
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: ;
+        }
+
+        .hheading1 {
+            font-size: 4.3rem;
+            font-weight: bolder;
+            color: white;
+            display: inline-block;
+            line-height: 4.4rem;
+            /*  z-index: 2;*/
+        }
+
+        .hheading2 {
+            font-size: 1.5rem;
+            color: rgb(250, 243, 243);
+            display: inline-block;
+        }
+
+        @media(max-width: 800px) {
+            .hheading1 {
+                font-size: 3rem;
+                font-weight: bolder;
+                color: white;
+                display: inline-block;
+                line-height: 2.5rem;
+                padding: 0;
+                margin: 0;
+            }
+
+            .hheading2 {
+                font-size: 1.5rem;
+                font-weight: bolder;
+                color: white;
+                display: inline-block;
+                line-height: 1.5rem;
+            }
+
+            .ttext1 .ancher-baba {
+                margin: 0.7rem 0;
+            }
+        }
+
+        .quote {
+            color: lawngreen;
+        }
+
+        #hac {
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-style: solid;
+            text-decoration-thickness: 0.4rem;
+        }
+
+        /*section0 start here*/
+        .nst-service-section1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-rows: min-content;
+            grid-gap: 0.1rem;
+            margin-bottom: ;
+            /* padding: 6rem 10rem;*/
+            padding: 1rem;
+        }
+
+        .nst-div1 {
+            padding: 3rem;
+        }
+
+        .nst-div2 {
+            width: 100%;
+            height: 100%;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            padding: 3rem;
+        }
+
+        .nst-div2 img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            padding: 0 3rem;
+        }
+
+        .nst-div2 a {
+            position: relative;
+            top: px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+            display: inline-block;
+            background-color: rgb(189, 4, 4);
+            font-weight: bold;
+            padding: 0.5rem 3rem;
+            border: 2px solid lightgrey;
+            border-radius: 0.3rem;
+        }
+
+        .nst-div2 a:hover {
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: white;
+            background-color: grey;
+            padding: 0.5rem 3rem;
+            border: 2px solid black;
+        }
+
+        .nst-heading2 {
+            font-size: 3rem;
+            line-height: 2.7rem;
+            font-weight: bolder;
+            display: inline-block;
+        }
+
+        .nst-text-content {
+            font-size: 1.2rem;
+            display: inline-block;
+            line-height: 1.5rem;
+            /*color: rgb(119, 116, 116);*/
+            color: #333;
+            word-spacing: ;
+            padding: 0.7rem 0;
+        }
+
+        .nst-text-content1 {
+            font-size: 1.2rem;
+            display: inline-block;
+            line-height: 1.5rem;
+            /*color: rgb(119, 116, 116);*/
+            color: #333;
+            font-weight: bold;
+            padding: 0.7rem 0;
+        }
+
+        @media(max-width:800px) {
+            .heading-container {
+                padding: 0 3rem;
+            }
+
+            /*.nst-service-section1 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: min-content min-content;
+                grid-auto-rows: min-content;
+                padding: 1rem 1rem;
+            }*/
+            .nst-heading2 {
+                font-size: 2.5rem;
+                line-height: 2.3rem;
+            }
+
+            .nst-div1 {
+                padding: 0.5rem;
+            }
+
+            .nst-div2 {}
+        }
+
+        /*section0 ends here*/
+
+    </style>
+</head>
+
+<body>
+    <!--header-- class="hhdr">
+        <div class="iimg-wrapper">
+        </div>
+        <div class="ttext-container">
+            <div class="ttext1">
+                <p class="hheading1">Protect Your
+                    <span
+                        style="color: rgb(245, 138, 191);">Business</span>
+                    <span style="">From</span>
+                    <span class="hac">Hac</span>kers
+                </p>
+                <a href="../nav/about.html"
+                    class="ancher-baba">Learn
+                    More</a>
+            </div>
+            <div class="ttext2">
+                <p class="hheading2"><span
+                        class="quote">“</span>It
+                    is not the monsters we should
+                    be afraid of it is the people
+                    that don’t recognize the same
+                    monsters inside of
+                    themselves.<span
+                        class="quote">”</span>
+                </p>
+            </div>
+        </div>
+        <div class="oover-lay"></div>
+    </!--header-->
+    <nav class="navbar" id="naaj">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5"
+                        stroke="#fff"
+                        stroke-width="5" />
+                    <path d="M0,14 30,14"
+                        stroke="#fff"
+                        stroke-width="5" />
+                    <path d="M0,23 30,23"
+                        stroke="#fff"
+                        stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <span class="mylogo" style=""><a
+                href="index.html">Tech2Bit</a></span>
+        <ul class="navbar-nav">
+            <li><a href="index.html" class="home"
+                    style="text-decoration:;">Home</a>
+            </li>
+            <li><a
+                    href="../nav/about.html">About</a>
+            </li>
+            <li><a
+                    href="../nav/testimonial.html">Testimonial</a>
+            </li>
+            <li><a
+                    href="../nav/contactus.html">Contact</a>
+            </li>
+            <li><a
+                    href="../nav/services.html">Services</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close"
+            onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="../nav/about.html">About</a>
+        <a
+            href="../nav/testimonial.html">Testimonial</a>
+        <a
+            href="../nav/contactus.html">Contact</a>
+        <a
+            href="../nav/services.html">Services</a>
+    </div>
+    <!--navbar-landing image section starthere-->
+    <header class="hhdr">
+        <div class="iimg-wrapper">
+        </div>
+        <div class="ttext-container">
+            <div class="ttext1">
+                <p class="hheading1">Protect Your
+                    <span
+                        style="color: rgb(245, 138, 191);">Business</span>
+                    <span style="">From</span>
+                    <span id="hac">Hac</span>kers
+                </p>
+                <a href="../nav/about.html"
+                    class="ancher-baba">Learn
+                    More</a>
+            </div>
+            <div class="ttext2">
+                <p class="hheading2"><span
+                        class="quote">“</span>It
+                    is not the monsters we should
+                    be afraid of it is the people
+                    that don’t recognize the same
+                    monsters inside of
+                    themselves.<span
+                        class="quote">”</span>
+                </p>
+            </div>
+        </div>
+        <div class="oover-lay"></div>
+    </header>
+    <!--navbar-landing image section endshere-->
+    <!--section 0 start here-->
+    <section
+        class="nst-service-section1 managed-it">
+        <div class="nst-divs nst-div1">
+            <p class="nst-heading2">We Are YOUR
+                Managed Services IT Department</p>
+            <br>
+            <p class="nst-text-content1">We’re a
+                Managed IT Department that takes
+                the burden of technology support
+                off you, so you can focus on your
+                business.</p>
+            <p class="nst-text-content">
+                Overseeing your technology can be
+                time-consuming and expensive.
+                TECH2BIT provides your business
+                with the benefit of a traditional
+                in-house IT service department,
+                but without the expense and
+                overhead. So as your needs change,
+                as your business grows, as your
+                strategy shifts, and even when
+                something goes wrong, we take care
+                of it.</p>
+        </div>
+        <div class="nst-divs nst-div2">
+            <img src="../img2/homepng.png" alt="">
+            <a href="../nav/contactus.html"
+                class="ancher-baba">Contact Us
+                Today</a>
+        </div>
+    </section>
+    <!--section0 ends here-->
+    <!--section1 start here-->
+    <section class="showcase1">
+        <div class="sc1-boxes sc1-box1"></div>
+        <div class="sc1-boxes sc1-box3"
+            style="background:red;  color: white;">
+            <div class="to-center-text">
+                <p
+                    style="font-size: 2rem; font-weight: 4rem;display: inline-block;  text-align: center;padding-bottom: 0rem;">
+                    Our Technology Solutions </p>
+                <div class="border"
+                    style=" background: #2f4b78;  border: 0.2rem solid #2f4b78;">
+                </div>
+                <div class="border1"></div>
+                <p
+                    style="font-size: 1rem; background: ;">
+                    Your business is unique and so
+                    are the challenges it faces.
+                    In order to determine the
+                    right solutions for your
+                    organization, we analyze your
+                    current setup and create a
+                    plan of action customized to
+                    your needs. We take the burden
+                    off of you. We handle it all
+                    so you don’t have to. How easy
+                    is that?</p>
+            </div>
+        </div>
+        <div class="sc1-boxes sc1-box3"
+            style="background:#2f4b78;  color: white;">
+            <div class="to-center-text">
+                <p
+                    style="font-size: 2rem; font-weight: 4rem;display: inline-block;  text-align: center;padding-bottom: 0rem;">
+                    We take the burden off you
+                </p>
+                <div class="border">
+                </div>
+                <div class="border1"></div>
+                <p
+                    style="font-size: 1rem; background: ;">
+                    Managing your technology can
+                    be time-consuming and
+                    expensive. TECH2BIT provides
+                    your business with the benefit
+                    of a traditional in-house IT
+                    department, but without the
+                    expense and overhead. So as
+                    your needs change. </p>
+            </div>
+        </div>
+    </section>
+    <!--section1 ends here-->
+    <!--section2 start here-->
+    <section class="showcase2">
+        <div class="sc2-box1"
+            style=" background:#2f4b78;  color: white;">
+            <div class="to-center-text">
+                <p
+                    style="font-size: 1.9rem; font-weight: bold;">
+                    What Makes Us Different </p>
+                <div class="border"></div>
+                <div class="border1"></div>
+                <ul>
+                    <li><i
+                            class="far fa-circle"></i>Cyber
+                        Security Focused</li>
+                    <li><i
+                            class="far fa-circle "></i>All-inclusive
+                        plans</li>
+                    <li><i
+                            class="far fa-circle"></i>Managed
+                        IT department</li>
+                    <li><i
+                            class="far fa-circle "></i>Vendor
+                        management</li>
+                    <li>
+                        <i
+                            class="far fa-circle"></i>Voice
+                        services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sc2-box2 "
+            style="background-color: cyan; ">
+        </div>
+    </section>
+    <!--section2 ends here-->
+    <!--section3-->
+    <section class="showcase3 ">
+        <div class="sc3-box1 ">
+        </div>
+        <div class="sc3-box2 "
+            style=" /*background-color: #5b6a82; background:#2f4b78;*/ background: red;">
+            <div class="to-center-text ">
+                <p
+                    style="font-size: 1.9rem; font-weight: bold; ">
+                    What Makes Us Different </p>
+                <ul class="index-ul1 ">
+                    <li> <i class="far fa-circle "
+                            style="color: white"></i>Cyber
+                        Security Focused rammm
+                    </li>
+                    <li><i class="far fa-circle "
+                            style="color: white"></i>All-inclusive
+                        plans</li>
+                    <li><i class="far fa-circle "
+                            style="color: white"></i>Managed
+                        IT department</li>
+                    <li><i class="far fa-circle "
+                            style="color: white"></i>Vendor
+                        management</li>
+                    <li><i class="far fa-circle "
+                            style="color: white"></i>Voice
+                        services</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="showcase4 ">
+        <div class="sc4-box1 ">
+            <div class="to-center-text ">
+                <p
+                    style="font-size: 2.5rem; font-weight:bolder; text-align: center;padding-bottom: 0.5rem; font-family: Verdana, Geneva, Tahoma, sans-serif; ">
+                    Tech2Bit Has Everything you
+                    need </p>
+                <div
+                    style="display: flex; justify-content: center;">
+                    <div class="border"
+                        style="width: 60%; background: #2f4b78; border: 0.2rem solid #2f4b78; margin-right: 0.1rem;">
+                    </div>
+                    <div class="border1"
+                        style="background: red; border: 0.2rem solid red;">
+                    </div>
+                </div>
+                <p class="has-everything-text "
+                    style=" ">We’re a fully
+                    functioning team of
+                    professionals that will manage
+                    all aspects of your IT, from
+                    vendor management and support
+                    all the way up to CIO
+                    services. </p>
+            </div>
+        </div>
+    </section>
+    <!--section4 ends here-->
+    <!--section5 start here-->
+    <section class="showcase5 ">
+        <div class="sc5-boxes sc5-box1 ">
+            <div
+                class="nested-sc5-boxes nested-sc5-box1 sc5-icon-class ">
+                <i class="fas fa-recycle "></i>
+            </div>
+            <div
+                class="nested-sc5-boxes nested-sc5-box2 nested-sc5-text ">
+                <div>
+                    <p class="sc5-h ">Managed
+                        Security Services </p>
+                    <p class="sc5-p ">Managed
+                        Security Services (MSS)
+                        portfolio has been
+                        designed to businesses
+                        peace of mind. Supported
+                        by world-class global
+                        security partners, the
+                        Managed Security Services
+                        portfolio offers a host of
+                        solutions and services to
+                        keep your business safe.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="nested-sc5-boxes nested-sc5-box3 sc5-icon-class ">
+                <i class="fas fa-anchor "></i>
+            </div>
+            <div
+                class="nested-sc5-boxes nested-sc5-box4 nested-sc5-text ">
+                <div>
+                    <p class="sc5-h ">Security
+                        Monitoring</p>
+                    <p class="sc5-p ">Security
+                        Monitoring portfolio
+                        shields customers from the
+                        latest advanced threats
+                        using a combination of big
+                        data analytics,
+                        comprehensive threat
+                        intelligence, and advanced
+                        security automation tools
+                        all backed up by our team.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="nested-sc5-boxes nested-sc5-box5 sc5-icon-class ">
+                <i class="fab fa-bity "></i>
+            </div>
+            <div class="nested-sc5-boxes nested-sc5-box6 nested-sc5-text "
+                style="background: #2f4b78;">
+                <div>
+                    <p class="sc5-h "> Distributed
+                        Denial of Service (DDos)
+                    </p>
+                    <p class="sc5-p ">The need for
+                        enterprises to secure
+                        their network environments
+                        has evolved rapidly over
+                        the last few years.
+                        Activists and hackers are
+                        increasingly deploying
+                        Denial of Service (DDoS)
+                        attacks towards the edge
+                        of enterprise networks and
+                        infrastructure. </p>
+                </div>
+            </div>
+            <div
+                class="nested-sc5-boxes nested-sc5-box7 sc5-icon-class ">
+                <i class="fas fa-arrows-alt "></i>
+            </div>
+            <div
+                class="nested-sc5-boxes nested-sc5-box8 nested-sc5-text ">
+                <div>
+                    <p class="sc5-h "> Cloud-based
+                        security solution </p>
+                    <p class="sc5-p ">Cloud
+                        Security integrates web,
+                        email, mobile and the
+                        latest channels of
+                        communication to combat
+                        cyber attacks. It also
+                        addresses Internet
+                        vulnerabilities for
+                        enterprise, government and
+                        SMEs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sc5-boxes sc5-box2 ">
+        </div>
+    </section>
+    <!--section5ends here-->
+    <!--footer start here-->
+    <!--counter start here-->
+    <!--section class="counters">
+        <div class="overlay2"></div>
+        <div class="count-container">
+            <div class="ddd1">
+                <div class="counter"
+                    data-target="60000 ">0 </div>
+                <h5><i
+                        class="fab fa-twitter fa-4x "></i>
+                </h5>
+            </div>
+            <div class="ddd2">
+                <div class="counter"
+                    data-target="15000 ">0 </div>
+                <h5> <i
+                        class="fab fa-twitter fa-4x "></i>
+                </h5>
+            </div>
+            <div class="ddd3">
+                <div class="counter"
+                    data-target="9000 ">0 </div>
+                <h5> <i
+                        class="fab fa-facebook fa-4x "></i>
+                </h5>
+            </div>
+            <div class="ddd4">
+                <div class="counter"
+                    data-target="5000 ">0 </div>
+                <h5><i
+                        class="fab fa-linkedin fa-4x "></i>
+                </h5>
+            </div>
+        </div>
+    </!--section-->
+    <!--counter ends here-->
+    <section class="showcase7 ">
+        <div class="logo-icon-section ">
+            <div class="logo-box1 ">
+                <a href="index.html">Tech2Bit</a>
+            </div>
+            <div class="logo-box2 "
+                style="background-color: ; ">
+                <a href=" "><i
+                        class="fab fa-facebook-square "></i></a>
+                <a href=" "><i
+                        class="fab fa-instagram "></i></a>
+                <a href=" "><i
+                        class="fab fa-twitter "></i></a>
+                <a href=" "><i
+                        class="fab fa-linkedin "></i></a>
+                <a href=" "><i
+                        class="fab fa-youtube "></i></a>
+            </div>
+        </div>
+        <div class="nav-container ">
+            <div class="nav-box1 ">
+                <a href="../subweb/cyber.html">Cyber
+                    Security</a>
+                <a href="../subweb/dw.html">DW-Monitoring
+                </a>
+                <a href="../subweb/it.html">It-Support
+                </a>
+                <a href="../subweb/emp.html">Emp-At
+                </a>
+                <a href="../subweb/network.html">Network
+                    Monitoring </a>
+                <a href="../subweb/regulat.html">Regulatory
+                    Comp</a>
+                <a href="../subweb/voip.html">VoIp
+                    Services</a>
+                <a href="../subweb/data.html">Data
+                    Backup</a>
+                <a href="../nav/services.html">All
+                    Services</a>
+            </div>
+            <div class="nav-box2 ">Threat is a
+                mirror of security gaps.
+                Cyber-threat is mainly a
+                reflection of our weaknesses. An
+                accurate vision of digital and
+                behavioral gaps is crucial for a
+                consistent cyber-resilience.
+            </div>
+        </div>
+        <div class="copy-right ">
+            <a href="index.html">Home</a>
+            <a href="../nav/about.html">About
+                Us</a>
+            <a href="../nav/contactus.html">Contact
+                Us</a>
+            <a
+                href="../nav/testimonial.html">Testimonial</a>
+        </div>
+    </section>
+    <!--footer ends here-->
+    <script
+        src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script
+        src="../java/boxanimation.js"></script>
+    <script src="../java/navbar.js"></script>
+    <script src="../java/java2.js"></script>
+    <script src="../java/sidenav.js"></script>
+    <script
+        src="https://kit.fontawesome.com/c9c47b63d8.js "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>
